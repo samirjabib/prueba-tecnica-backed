@@ -1,0 +1,11 @@
+extends _base
+
+block emailContent
+ p Hi, here is the inventary of the company
+
+  ul 
+    div(class="container___product")
+        each product in mailData
+            div(class="container___product-card")
+                li Product name: #{product.name}
+                console.log()
