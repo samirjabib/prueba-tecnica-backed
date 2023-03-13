@@ -130,8 +130,8 @@ const addProduct = async (req, res, next) => {
 
 const getInventory = async (req, res, next) => {
   try {
-    const { inventoryId } = req.params;
-    const { email } = req.body;
+    // const { inventoryId } = req.params;
+    const { email, inventoryId } = req.body;
     const response = await companyServices.getInventory(inventoryId, email)
     res.status(StatusCodes.OK).json({ response })
   } catch (error) {
