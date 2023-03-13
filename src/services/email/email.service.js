@@ -14,15 +14,15 @@ class Email {
   }
 
   // Connect to mail service
-  newTransport () {
+  newTransport() {
     return nodemailer.createTransport({
-      host: 'smtp.mailtrap.io',
-      port: 2525,
+      service: 'gmail',
       auth: {
-        user: '116831b4450b14', // Mover a dotenv
-        pass: '55b6252e23ab2e' // Mover a dotenv
-      }
-    })
+        user: "cuentatestprueba9669@gmail.com",
+        pass: 'mnfwhrvxokckaonv'
+      },
+    });
+
   }
 
   async sendEmail(template, subject, mailData) {
