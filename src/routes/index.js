@@ -6,6 +6,8 @@ const router = express.Router()
 // Routes
 router.use('/auth', authRouter)
 router.use("/company", companyRouter)
-
+router.use("/health", (req,res) => {
+    console.log("healty")
+})
 
 module.exports = { router }

@@ -39,7 +39,7 @@ companyRouter.post("/add-product", addProduct)
 
 /* Get company inventory by email */
 
-companyRouter.post("/get-inventory/:inventoryId", getInventory)
+companyRouter.post("/get-inventory", getInventory)
 
 
 module.exports = { companyRouter }

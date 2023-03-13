@@ -7,7 +7,7 @@ const dotenv = require('dotenv')
 const { initRelationships } = require('./src/models/relationships')
 dotenv.config({ path: './config.env' })
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4001
 const NODE_ENV = process.env.NODE_ENV
 
 
