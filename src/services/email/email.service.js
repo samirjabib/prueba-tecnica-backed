@@ -14,13 +14,13 @@ class Email {
   }
 
   // Connect to mail service
-  newTransport() {
+  newTransport () {
     return nodemailer.createTransport({
       host: 'smtp.mailtrap.io',
       port: 2525,
       auth: {
-        user: '046ab6b4f02e47', // Mover a dotenv
-        pass: '476a8e1e59a9b9' // Mover a dotenv
+        user: '116831b4450b14', // Mover a dotenv
+        pass: '55b6252e23ab2e' // Mover a dotenv
       }
     })
   }
