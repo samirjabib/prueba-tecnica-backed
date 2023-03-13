@@ -55,7 +55,7 @@ class Email {
 
 
   async sendInventory(mailData) {
-    await this.sendEmail('Inventory', 'Here you can find the inventory of the company', mailData)
+    await this.sendEmail('inventory', 'Here you can find the inventory of the company', mailData)
   }
 }
 
